@@ -1,0 +1,19 @@
+[package]
+name = "stegano-vault"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes-gcm = "0.10.3"
+clap = "4.5.31"
+hound = "3.5.1"
+image = "0.25.5"
+pqcrypto = "0.18.1"
+rand = "0.9.0"
+
+[lib]
+path="src/encryption.rs"
+
+[[bin]]
+path="src/main.rs"
+name="stegano-vault"
