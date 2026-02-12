@@ -26,7 +26,7 @@ SteganoVault is a command-line utility that combines advanced encryption (AES-25
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/stegano-vault.git
+git clone https://github.com/recurzes/stegano-vault.git
 cd stegano-vault
 
 # Build the project
