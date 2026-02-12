@@ -1,19 +1,25 @@
 [package]
 name = "stegano-vault"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
+authors = ["Recurzion"]
+description = "A secure steganography tool for hiding encrypted data within image and audio files"
+license = "MIT"
+readme = "README.md"
+keywords = ["steganography", "encryption", "security", "cryptography"]
+categories = ["cryptography", "multimedia"]
 
 [dependencies]
 aes-gcm = "0.10.3"
 clap = "4.5.31"
 hound = "3.5.1"
 image = "0.25.5"
-pqcrypto = "0.18.1"
 rand = "0.9.0"
 
 [lib]
-path="src/encryption.rs"
+name = "stegano_vault"
+path = "src/lib.rs"
 
 [[bin]]
-path="src/main.rs"
-name="stegano-vault"
+name = "stegano-vault"
+path = "src/main.rs"
